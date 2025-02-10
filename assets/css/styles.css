@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "payda-Regular";
+    src: url('../fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
+}
+
+@font-face {
+    font-family: "payda-Bold";
+    src: url('../fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
+}
+
+/*  */
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+body {
+    font-family: "payda-Regular";
+    user-select: none;
+    background: #E1E0CF;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.font-600{
+    font-weight: 600;
+}
+.font-800{
+    font-weight: 800;
+}
+.max-w-295{
+    max-width: 295px;
+    width: 100%;
+}
+.mt-93{
+    margin-top: 93px;
+}
+.bg-main{
+    background-color: #0D446B;
+}
+.bg-second{
+    background-color: #939D2D;
+}
+.text-main{
+    color: #0D446B;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.h-51{
+    height: 51px;
+}
+.h-100vh{
+    height: 100vh;
+}
+.h-440{
+    height: 440px;
+}
+.swiper-button-prev{
+    background: #939D2D;
+  width: 96%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 50px;
+  bottom: auto;
+  top: 695px;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-prev::after {
+    content: 'بعدی';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: auto;
+  top: 649px;
+  left: 0;
+  width: 100%;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #0D446B;
+  }
+  .swiper-button-prev.hidden {
+    display: none;
+}
+@media only screen and (max-width:1400px) {
+    
+}
+
+@media only screen and (max-width:1200px) {
+  
+}
+
+@media only screen and (max-width:992px) {
+   
+}
+
+@media only screen and (max-width:768px) {
+  
+}
+
+@media only screen and (max-width:576px) {
+   
+}
+
+@media only screen and (max-width:400px) {}
