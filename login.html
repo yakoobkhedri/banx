@@ -10,14 +10,56 @@
   <title>ورود</title>
 </head>
 
-<body>
+<body class="bg-gray">
 
-  <section class="h-100">
+  <!-- Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content max-w-350 mx-auto rounded-20 p-3 pt-0">
+      <img alt="logo" src="assets/img/Group 72.png" class="d-block mx-auto mt-40 w-60 h-60">
+      <p class="font-700 text-main text-center mt-3 mb-0">نصب نسخه وب اپلیکیشن</p>
+      <div class="my-4 py-1 pe-3">
+        <div class="d-flex align-items-center gap-2 mb-3">
+         <img alt="icon" src="assets/img/svg/upload-01.svg" class="flex-shrink-0">
+         <p class="mb-0 text-main font-600 fs-14">در نوار پایین دکمه share را بزنید.</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+         <img alt="icon" src="assets/img/svg/plus-square.svg" class="flex-shrink-0">
+         <p class="mb-0 text-main font-600 fs-14">دکمه Add to home screen را انتخاب کنید.</p>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+         <img alt="icon" src="assets/img/svg/plus-square.svg" class="flex-shrink-0">
+         <p class="mb-0 text-main font-600 fs-14">در مرحله آخر روی Add بزنید.</p>
+        </div>
+      </div>
+      <button type="button" class="text-main border-0 bg-main2 fs-14 font-600 h-51 rounded-10 text-center" data-bs-dismiss="modal">متوجه شدم</button>
+    </div>
+  </div>
+</div>
+
+
+  <section>
     <div class="h-338 position-relative d-flex align-items-center justify-content-center bg-main">
       <a class="position-relative z-10"><img alt="logo" src="assets/img/Group.png" class="d-block mx-auto position-relative"></a>
       <img alt="shape" src="assets/img/Mask group.png" class="position-absolute w-100 h-100 end-0 start-0 top-0 bottom-0">
-      <img alt="shape" src="assets/img/Group 72.png" class="position-absolute end-0 start-0 -bottom-39 mx-auto">
+      <img alt="logo" src="assets/img/Group 72.png" class="position-absolute end-0 start-0 -bottom-41 mx-auto">
     </div>
+    <form class="mt-80 max-w-350 mx-auto px-3">
+      <input placeholder="نام کاربری" class="h-61 rounded-10 border-main w-100 bg-white outline-none px-3 mb-1">
+      <div class="h-61 rounded-10 border-main bg-white px-3 mb-4 d-flex align-items-center gap-3">
+        <input placeholder="رمز عبور" class="h-100 w-100 bg-white outline-none border-0">
+        <svg class="cursor" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_1_3155" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+          <rect y="0.137695" width="24" height="24" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_1_3155)">
+          <path d="M12 16.1377C13.25 16.1377 14.3125 15.7002 15.1875 14.8252C16.0625 13.9502 16.5 12.8877 16.5 11.6377C16.5 10.3877 16.0625 9.3252 15.1875 8.4502C14.3125 7.5752 13.25 7.1377 12 7.1377C10.75 7.1377 9.6875 7.5752 8.8125 8.4502C7.9375 9.3252 7.5 10.3877 7.5 11.6377C7.5 12.8877 7.9375 13.9502 8.8125 14.8252C9.6875 15.7002 10.75 16.1377 12 16.1377ZM12 14.3377C11.25 14.3377 10.6125 14.0752 10.0875 13.5502C9.5625 13.0252 9.3 12.3877 9.3 11.6377C9.3 10.8877 9.5625 10.2502 10.0875 9.7252C10.6125 9.2002 11.25 8.9377 12 8.9377C12.75 8.9377 13.3875 9.2002 13.9125 9.7252C14.4375 10.2502 14.7 10.8877 14.7 11.6377C14.7 12.3877 14.4375 13.0252 13.9125 13.5502C13.3875 14.0752 12.75 14.3377 12 14.3377ZM12 19.1377C9.56667 19.1377 7.35 18.4585 5.35 17.1002C3.35 15.7419 1.9 13.921 1 11.6377C1.9 9.35436 3.35 7.53353 5.35 6.1752C7.35 4.81686 9.56667 4.1377 12 4.1377C14.4333 4.1377 16.65 4.81686 18.65 6.1752C20.65 7.53353 22.1 9.35436 23 11.6377C22.1 13.921 20.65 15.7419 18.65 17.1002C16.65 18.4585 14.4333 19.1377 12 19.1377ZM12 17.1377C13.8833 17.1377 15.6125 16.6419 17.1875 15.6502C18.7625 14.6585 19.9667 13.321 20.8 11.6377C19.9667 9.95436 18.7625 8.61686 17.1875 7.6252C15.6125 6.63353 13.8833 6.1377 12 6.1377C10.1167 6.1377 8.3875 6.63353 6.8125 7.6252C5.2375 8.61686 4.03333 9.95436 3.2 11.6377C4.03333 13.321 5.2375 14.6585 6.8125 15.6502C8.3875 16.6419 10.1167 17.1377 12 17.1377Z" fill="#0D446B"/>
+          </g>
+        </svg>
+      </div>
+      <a class="font-600 fs-14 bg-main text-white h-51 text-center rounded-10 d-flex align-items-center justify-content-center">ورود به بنکس</a>
+      <a data-bs-toggle="modal" data-bs-target="#helpModal" class="font-600 fs-14 text-center text-main2 d-block mt-4">نیاز به کمک دارم</a>
+    </form>
   </section>
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>

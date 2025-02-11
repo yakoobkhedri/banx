@@ -1,13 +1,19 @@
 @font-face {
-    font-family: "payda-Regular";
-    src: url('../fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
+    font-family: "abar-Regular";
+    src: url('../fonts/Abar/Webfonts/woff/AbarLowFaNum-Regular.woff') format("woff");
 }
-
 @font-face {
-    font-family: "payda-Bold";
-    src: url('../fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
+    font-family: "abar-semibold";
+    src: url('../fonts/Abar/Webfonts/woff/AbarHighFaNum-SemiBold.woff') format("woff");
 }
-
+@font-face {
+    font-family: "abar-Bold";
+    src: url('../fonts/Abar/Webfonts/woff/AbarLowFaNum-Bold.woff') format("woff");
+}
+@font-face {
+    font-family: "abar-extraBold";
+    src: url('../fonts/Abar/Webfonts/woff/AbarLowFaNum-ExtraBold.woff') format("woff");
+}
 /*  */
 html {
     scroll-behavior: smooth;
@@ -15,7 +21,7 @@ html {
 }
 
 body {
-    font-family: "payda-Regular";
+    font-family: "abar-Regular";
     user-select: none;
     background: #E1E0CF;
 }
@@ -23,39 +29,106 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
+.cursor{
+    cursor: pointer;
+}
+.outline-none{
+    outline: none;
+}
 .font-600{
+    font-family: "abar-semibold";
     font-weight: 600;
 }
+.font-700{
+    font-family: "abar-Bold";
+    font-weight: 700;
+}
 .font-800{
+    font-family: "abar-extraBold";
     font-weight: 800;
 }
 .max-w-295{
     max-width: 295px;
     width: 100%;
 }
-.-bottom-39{
-    bottom: -39px;
+.max-w-350{
+    max-width: 350px;
+    width: 100%;
+}
+.-bottom-41{
+    bottom: -41px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-80{
+    margin-top: 80px;
 }
 .mt-93{
     margin-top: 93px;
 }
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+.opacity-70{
+    opacity: 70%;
+}
+.border-main{
+    border: 1px solid #0D446B1A
+}
+.border-second{
+    border: 1px solid #939D2D33;
+}
 .bg-main{
     background-color: #0D446B;
+}
+.bg-main2{
+    background-color: #0D446B1A;
 }
 .bg-second{
     background-color: #939D2D;
 }
+.bg-gray{
+    background-color: #F8F8F4;
+}
 .text-main{
     color: #0D446B;
+}
+.text-main2{
+    color: #1B76A8;
 }
 .rounded-10{
     border-radius: 10px;
 }
+.rounded-20{
+    border-radius: 20px;
+}
 .fs-14{
     font-size: 14px;
 }
+.fs-20{
+    font-size: 20px;
+}
+.w-1-4{
+  width: calc(100%/4);
+}
+.h-4{
+    height: 4px;
+}
+.w-60{
+    width: 60px;
+}
 .h-51{
     height: 51px;
+}
+.h-60{
+    height: 60px;
+}
+.h-61{
+    height: 61px;
+}
+.h-68{
+    height: 68px;
 }
 .h-100vh{
     height: 100vh;
@@ -97,6 +170,13 @@ a{
   }
   .swiper-button-prev.hidden {
     display: none;
+}
+.step{
+    background-color: #0D446B;
+    opacity: 20%;
+}
+.step.active{
+    opacity: 100%;
 }
 @media only screen and (max-width:1400px) {
     
