@@ -70,11 +70,17 @@ a{
 input[type="number"] {
     -moz-appearance: textfield;
   }
+  .opacity-60{
+    opacity: 60%;
+}
 .opacity-70{
     opacity: 70%;
 }
 .border-main{
-    border: 1px solid #0D446B1A
+    border: 1px solid #0D446B1A;
+}
+.border-main2{
+    border: 1px solid #1B76A880;
 }
 .border-second{
     border: 1px solid #939D2D33;
@@ -105,6 +111,9 @@ input[type="number"] {
 }
 .fs-14{
     font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
 }
 .fs-20{
     font-size: 20px;
@@ -177,6 +186,13 @@ input[type="number"] {
 }
 .step.active{
     opacity: 100%;
+}
+/* success message */
+.successMessage > div {
+    opacity: 25%;
+}
+.successMessage > div.success {
+  opacity: 100%;
 }
 @media only screen and (max-width:1400px) {
     
