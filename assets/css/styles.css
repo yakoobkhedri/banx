@@ -121,6 +121,9 @@ input[type="number"] {
 .rounded-20{
     border-radius: 20px;
 }
+.fs-12{
+    font-size: 12px;
+}
 .fs-14{
     font-size: 14px;
 }
@@ -133,6 +136,9 @@ input[type="number"] {
 .w-1-4{
   width: calc(100%/4);
 }
+.w-32{
+    width: 32px;
+}
 .w-48{
     width: 48px;
 }
@@ -144,6 +150,9 @@ input[type="number"] {
 }
 .h-4{
     height: 4px;
+}
+.h-32{
+    height: 32px;
 }
 .h-48{
     height: 48px;
@@ -247,6 +256,18 @@ input[type="number"] {
   border-radius: 10px;
   background-color: #939D2D;
   opacity: 20%;
+}
+#navigation a svg path,#navigation a svg{
+  transition: all .4s;
+}
+#navigation a:hover svg path,#navigation a.active svg path{
+    fill: #0D446B;
+}
+.profile-list a:hover,.profile-list a.active{
+    color: #1B76A8;
+}
+.profile-list a:hover svg path{
+  stroke: #1B76A8;
 }
 @media only screen and (max-width:1400px) {
     
