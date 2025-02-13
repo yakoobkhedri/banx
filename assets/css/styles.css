@@ -193,6 +193,9 @@ input[type="number"] {
 .z-10{
     z-index: 10;
 }
+.z-10400{
+    z-index: 10400;
+}
 .shadow-1{
     box-shadow: 0px -4px 4px 0px #0D446B05;
 }
@@ -256,6 +259,9 @@ input[type="number"] {
   border-radius: 10px;
   background-color: #939D2D;
   opacity: 20%;
+}
+#navigation{
+    z-index: 10000;
 }
 #navigation a svg path,#navigation a svg{
   transition: all .4s;
