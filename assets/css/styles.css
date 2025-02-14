@@ -100,6 +100,9 @@ input[type="number"] {
 .bg-main2{
     background-color: #0D446B1A;
 }
+.bg-main3{
+    background-color: #6F71D2;
+}
 .bg-second{
     background-color: #939D2D;
 }
@@ -108,6 +111,12 @@ input[type="number"] {
 }
 .bg-gray{
     background-color: #F8F8F4;
+}
+.bg-pink{
+    background-color: #D536361A;
+}
+.bg-white-25{
+    background-color: rgba(255, 255, 255, 0.255);
 }
 .text-main{
     color: #0D446B;
@@ -120,6 +129,9 @@ input[type="number"] {
 }
 .rounded-20{
     border-radius: 20px;
+}
+.fs-10{
+    font-size: 10px;
 }
 .fs-12{
     font-size: 12px;
@@ -151,6 +163,9 @@ input[type="number"] {
 .h-4{
     height: 4px;
 }
+.h-6{
+    height: 6px;
+}
 .h-32{
     height: 32px;
 }
@@ -159,6 +174,9 @@ input[type="number"] {
 }
 .h-51{
     height: 51px;
+}
+.h-57{
+    height: 57px;
 }
 .h-60{
     height: 60px;
@@ -234,6 +252,19 @@ input[type="number"] {
 }
 .step.active{
     opacity: 100%;
+}
+/* otp */
+.otpInput.error{
+    border: 2px solid #D53636;
+}
+.otpInput.success{
+    border: 2px solid #939D2D;
+}
+.inputBox.error{
+    border: 1px solid #D53636;
+}
+.inputBox.success{
+    border: 1px solid #939D2D;
 }
 /* success message */
 .successMessage > div {
