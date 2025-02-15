@@ -11,6 +11,24 @@
 </head>
 
 <body class="bg-gray">
+
+  <div class="modal-backdrop z-10400 fade show"></div>
+  <!-- Modal -->
+  <div class="modal z-10400 fade show" id="AuthModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: block;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content max-w-350 mx-auto rounded-20 p-3 pt-0">
+        <img alt="logo" src="assets/img/info-circle.png" class="d-block mx-auto mt-4 w-32 h-32">
+        <p class="font-700 text-main text-center mt-3">نکات مهم</p>
+        <p class="fs-12 opacity-60 text-center text-main">بهتر است قبل از شروع فرآیند این نکات را بدانید</p>
+        <ul class="fs-14 font-600 text-main text-justify mb-4">
+          <li>موجودی کارت هدیه تنها برای یک صندوق قابل استفاده است.</li>
+          <li>بعد از نهایی شدن فرآیند فعالسازی، ظرف مدت ۴۸ ساعت دارایی‌های شما به روز خواهد شد.</li>
+          <li>شما می‌توانید وضعیت کارت هدیه خود را از قسمت درخواست‌ها مشاهده کنید.</li>
+        </ul>
+        <button id="closeAuthModal" type="button" class="text-main border-0 bg-main2 fs-14 font-600 h-51 rounded-10 text-center" data-bs-dismiss="modal">متوجه شدم</button>
+      </div>
+    </div>
+  </div>
   
   <section>
   
@@ -45,6 +63,7 @@
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/counterup.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
