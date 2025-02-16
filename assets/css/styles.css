@@ -104,6 +104,9 @@ input[type="number"] {
 .border-second{
     border: 1px solid #939D2D33;
 }
+.border-second2{
+    border: 1px solid #B8C14B80;
+}
 .border-b-gray{
     border-bottom: 1px solid #D9D8D6;
 }
@@ -279,6 +282,9 @@ input[type="number"] {
 }
 .shadow-2{
     box-shadow: 0px 0px 10px 0px #0D446B1A;
+}
+.shadow-3{
+    box-shadow: 0px 0px 10px 0px #6A75131A;
 }
 .swiper-button-prev{
     background: #939D2D;
