@@ -101,6 +101,9 @@ input[type="number"] {
 .border-t-main{
     border-top: 1px solid #0D446B1A;
 }
+.border-t-main2{
+    border-top: 1px solid #0D446B33
+}
 .border-second{
     border: 1px solid #939D2D33;
 }
@@ -109,6 +112,9 @@ input[type="number"] {
 }
 .border-b-gray{
     border-bottom: 1px solid #D9D8D6;
+}
+.bg-overlay{
+   background-color: #0d0d0c52;
 }
 .bg-main{
     background-color: #0D446B;
@@ -274,6 +280,9 @@ input[type="number"] {
 .z-10{
     z-index: 10;
 }
+.z-1040{
+    z-index: 1040;
+}
 .z-10400{
     z-index: 10400;
 }
@@ -335,6 +344,16 @@ input[type="number"] {
 .inputBox.success{
     border: 1px solid #939D2D;
 }
+/* modal */
+.modal-box{
+    opacity: 0%;
+    visibility: hidden;
+    transition: all .4s;
+}
+.modal-box.active{
+    opacity: 100%;
+    visibility: visible;
+}
 /* success message */
 .successMessage > div {
     opacity: 25%;
@@ -361,7 +380,7 @@ input[type="number"] {
   opacity: 20%;
 }
 #navigation{
-    z-index: 10000;
+    z-index: 1000;
 }
 #navigation a svg path,#navigation a svg,.profile-list a{
   transition: all .4s;

@@ -12,20 +12,57 @@
 
 <body class="bg-gray">
 
-  <div class="modal-backdrop z-10400 fade show"></div>
-  <!-- Modal -->
-  <div class="modal z-10400 fade show" id="AuthModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: block;" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content max-w-350 mx-auto rounded-20 p-3 pt-0">
-        <img alt="logo" src="assets/img/info-circle.png" class="d-block mx-auto mt-4 w-32 h-32">
-        <p class="font-700 text-main text-center mt-3 mb-0">سجام</p>
-        <p class="opacity-80 text-main text-center fs-12 mt-3 mb-4">حسین عزیز شما هنوز احراز هویت سجام را انجام نداده‌اید.</p>
-        <button id="closeAuthModal" type="button" class="text-main border-0 bg-main2 fs-14 font-600 h-51 rounded-10 text-center" data-bs-dismiss="modal">متوجه شدم</button>
-      </div>
+
+  <!-- notification modal -->
+  <div class="active modal-box position-fixed w-100 h-100 overflow-auto bg-overlay z-1040 d-flex align-items-center justify-content-center">
+    <div class="bg-white max-w-350 mx-auto rounded-20 p-3 pt-0">
+      <img alt="logo" src="assets/img/info-circle.png" class="d-block mx-auto mt-4 w-32 h-32">
+      <p class="font-700 text-main text-center mt-3 mb-0">سجام</p>
+      <p class="opacity-80 text-main text-center fs-12 mt-3 mb-4">حسین عزیز شما هنوز احراز هویت سجام را انجام نداده‌اید.</p>
+      <button id="closeAuthModal" type="button" class="text-main d-block w-100 border-0 bg-main2 fs-14 font-600 h-51 rounded-10 text-center">متوجه شدم</button>
     </div>
   </div>
 
-  <!-- setting -->
+  <!-- support modal -->
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-350 mx-auto">
+      <div class="modal-content bg-transparent">
+        <div class="bg-white rounded-10">
+          <div class="text-main fs-14 text-center py-4">
+            <p class="mb-2 font-600">پشتیبانی</p>
+            <p class="mb-0">همیشه به وقت همه جا</p>
+          </div>
+          <div class="text-main fs-14 font-600">
+            <div class="d-flex align-items-center gap-2 border-t-main2 p-3 cursor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.59 9.5C9.8251 8.83167 10.2892 8.26811 10.9 7.90913C11.5108 7.55016 12.2289 7.41894 12.9272 7.53871C13.6255 7.65849 14.2588 8.02152 14.7151 8.56353C15.1713 9.10553 15.4211 9.79152 15.42 10.5C15.42 12.5 12.42 13.5 12.42 13.5M12.5 17.5H12.51M22.5 12.5C22.5 18.0228 18.0228 22.5 12.5 22.5C6.97715 22.5 2.5 18.0228 2.5 12.5C2.5 6.97715 6.97715 2.5 12.5 2.5C18.0228 2.5 22.5 6.97715 22.5 12.5Z" stroke="#0D446B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="mb-0">سوالات متداول</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 border-t-main2 p-3 cursor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.59436 11.7288C6.53221 11.3282 6.49996 10.9179 6.49996 10.5C6.49996 6.08172 10.1052 2.5 14.5526 2.5C18.9999 2.5 22.6052 6.08172 22.6052 10.5C22.6052 11.4981 22.4213 12.4535 22.0852 13.3345C22.0154 13.5175 21.9804 13.609 21.9646 13.6804C21.9489 13.7512 21.9428 13.801 21.9411 13.8735C21.9394 13.9466 21.9493 14.0272 21.9692 14.1883L22.3717 17.4585C22.4153 17.8125 22.4371 17.9895 22.3782 18.1182C22.3266 18.231 22.235 18.3205 22.1211 18.3695C21.9911 18.4254 21.8146 18.3995 21.4617 18.3478L18.2765 17.8809C18.1101 17.8565 18.027 17.8443 17.9512 17.8448C17.8763 17.8452 17.8245 17.8507 17.7511 17.8661C17.677 17.8817 17.5823 17.9172 17.393 17.9881C16.5097 18.319 15.5524 18.5 14.5526 18.5C14.1344 18.5 13.7237 18.4683 13.3227 18.4073M8.13158 22.5C11.0965 22.5 13.5 20.0376 13.5 17C13.5 13.9624 11.0965 11.5 8.13158 11.5C5.16668 11.5 2.76316 13.9624 2.76316 17C2.76316 17.6106 2.86028 18.1979 3.03955 18.7467C3.11533 18.9787 3.15322 19.0947 3.16566 19.1739C3.17864 19.2567 3.18091 19.3031 3.17608 19.3867C3.17145 19.4668 3.15141 19.5573 3.11134 19.7383L2.5 22.5L5.4948 22.091C5.65827 22.0687 5.74 22.0575 5.81137 22.058C5.88652 22.0585 5.92641 22.0626 6.00011 22.0773C6.0701 22.0912 6.17416 22.1279 6.38227 22.2014C6.93059 22.3949 7.51911 22.5 8.13158 22.5Z" stroke="#0D446B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="mb-0">گفتگو</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 border-t-main2 p-3 cursor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.35864 6.5C7.17357 4.64864 9.70268 3.5 12.5001 3.5C15.2975 3.5 17.8266 4.64864 19.6415 6.5M16.9723 9.5C15.8736 8.2725 14.277 7.5 12.5 7.5C10.723 7.5 9.12647 8.2725 8.02783 9.5M12.5 17.5C14.0105 17.5 15.4608 17.7576 16.8094 18.2313C16.8542 18.247 16.8767 18.2549 16.912 18.2705C17.2326 18.4118 17.4788 18.7591 17.5058 19.1084C17.5088 19.147 17.5088 19.1811 17.5088 19.2494C17.5088 19.4821 17.5088 19.5985 17.5185 19.6965C17.6122 20.6457 18.3631 21.3966 19.3123 21.4903C19.4103 21.5 19.5267 21.5 19.7594 21.5H20.0044C20.465 21.5 20.6952 21.5 20.8868 21.4622C21.6829 21.3053 22.3053 20.6829 22.4622 19.8868C22.5 19.6952 22.5 19.465 22.5 19.0044V18.8062C22.5 18.331 22.5 18.0933 22.4493 17.8209C22.3358 17.2119 21.8933 16.4583 21.4166 16.0624C21.2035 15.8854 21.0589 15.8048 20.7698 15.6435C18.322 14.2781 15.5019 13.5 12.5 13.5C9.49812 13.5 6.67797 14.2781 4.23021 15.6435C3.9411 15.8048 3.79654 15.8854 3.5834 16.0624C3.10675 16.4583 2.66421 17.2119 2.55074 17.8209C2.5 18.0933 2.5 18.331 2.5 18.8062V19.0044C2.5 19.465 2.5 19.6952 2.53776 19.8868C2.69469 20.6829 3.31709 21.3053 4.11321 21.4622C4.30476 21.5 4.53504 21.5 4.9956 21.5H5.24057C5.47332 21.5 5.5897 21.5 5.68773 21.4903C6.63689 21.3966 7.3878 20.6457 7.48152 19.6965C7.4912 19.5985 7.4912 19.4821 7.4912 19.2494C7.4912 19.1811 7.4912 19.147 7.49418 19.1084C7.52122 18.7591 7.7674 18.4118 8.08798 18.2705C8.12335 18.2549 8.14577 18.247 8.19061 18.2313C9.53921 17.7576 10.9895 17.5 12.5 17.5Z" stroke="#0D446B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="mb-0">تماس</p>
+            </div>
+          </div>
+        </div>
+        <div data-bs-dismiss="modal" class="bg-white mt-1 cursor rounded-10 h-57 text-main fs-14 font-600 d-flex align-items-center justify-content-center">
+          انصراف
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- setting modal -->
   <div class="offcanvas offcanvas-end bg-gray w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header d-flex align-items-center justify-content-start gap-3 mt-4">
       <div data-bs-dismiss="offcanvas" aria-label="Close" class="cursor">
@@ -176,7 +213,7 @@
           <path d="M6 12.2803L0 6.28027L6 0.280273L7.4 1.68027L2.8 6.28027L7.4 10.8803L6 12.2803Z" fill="#0D446B"/>
         </svg>
       </a>
-      <a class="d-flex align-items-center gap-2 text-main font-600 py-3 border-b-gray">
+      <a data-bs-toggle="modal" data-bs-target="#contactModal" class="d-flex align-items-center gap-2 text-main font-600 py-3 border-b-gray">
         <svg class="flex-shrink-0" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.09436 10.5091C5.03221 10.1085 4.99996 9.69813 4.99996 9.28027C4.99996 4.862 8.60525 1.28027 13.0526 1.28027C17.4999 1.28027 21.1052 4.862 21.1052 9.28027C21.1052 10.2783 20.9213 11.2337 20.5852 12.1148C20.5154 12.2978 20.4804 12.3893 20.4646 12.4607C20.4489 12.5315 20.4428 12.5812 20.4411 12.6537C20.4394 12.7269 20.4493 12.8074 20.4692 12.9686L20.8717 16.2388C20.9153 16.5928 20.9371 16.7698 20.8782 16.8985C20.8266 17.0112 20.735 17.1008 20.6211 17.1498C20.4911 17.2057 20.3146 17.1798 19.9617 17.1281L16.7765 16.6612C16.6101 16.6368 16.527 16.6246 16.4512 16.625C16.3763 16.6255 16.3245 16.631 16.2511 16.6464C16.177 16.662 16.0823 16.6975 15.893 16.7684C15.0097 17.0993 14.0524 17.2803 13.0526 17.2803C12.6344 17.2803 12.2237 17.2486 11.8227 17.1875M6.63158 21.2803C9.59648 21.2803 12 18.8178 12 15.7803C12 12.7427 9.59648 10.2803 6.63158 10.2803C3.66668 10.2803 1.26316 12.7427 1.26316 15.7803C1.26316 16.3909 1.36028 16.9782 1.53955 17.527C1.61533 17.759 1.65322 17.875 1.66566 17.9542C1.67864 18.0369 1.68091 18.0834 1.67608 18.167C1.67145 18.2471 1.65141 18.3376 1.61134 18.5186L1 21.2803L3.9948 20.8713C4.15827 20.8489 4.24 20.8378 4.31137 20.8383C4.38652 20.8388 4.42641 20.8429 4.50011 20.8575C4.5701 20.8715 4.67416 20.9082 4.88227 20.9817C5.43059 21.1752 6.01911 21.2803 6.63158 21.2803Z" stroke="#0D446B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>

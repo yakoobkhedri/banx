@@ -37,6 +37,18 @@
   </div>
 </div>
 
+<div class="offcanvas offcanvas-bottom h-100vh bg-gray" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body position-relative max-w-350 mx-auto">
+    <img alt="img" src="assets/img/Layer_1.png" class="d-block mx-auto mt-5">
+    <h4 class="text-center text-main font-700 fs-20 mt-5">فعال‌سازی نوتیفیکیشن</h4>
+    <p class="fs-14 text-main text-center mt-3 opacity-80">شما می‌توانید برای اطلاع‌رسانی سریع‌تر نوتیفیکیشن اپلیکیشن خود را فعال کنید.</p>
+    <div class="position-absolute bottom-0 end-0 start-0 m-3 mb-4">
+      <div class="rounded-10 bg-main h-51 px-2 text-white fs-14 cursor font-600 d-flex align-items-center justify-content-center">فعال شود</div>
+      <div data-bs-dismiss="offcanvas" class="rounded-10 bg-main2 mt-2 h-51 px-2 text-main fs-14 cursor font-600 d-flex align-items-center justify-content-center">الان نه!</div>
+    </div>
+  </div>
+</div>
+
 
   <section>
     <div class="h-338 position-relative d-flex align-items-center justify-content-center bg-main">
@@ -58,7 +70,7 @@
         </svg>
       </div>
       <a class="font-600 fs-14 bg-main text-white h-51 text-center rounded-10 d-flex align-items-center justify-content-center">ورود به بنکس</a>
-      <a class="font-600 fs-14 bg-main2 text-main h-51 text-center rounded-10 d-flex align-items-center justify-content-center mt-2">ثبت نام</a>
+      <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" class="font-600 fs-14 bg-main2 text-main h-51 text-center rounded-10 d-flex align-items-center justify-content-center mt-2">ثبت نام</a>
       <a data-bs-toggle="modal" data-bs-target="#helpModal" class="font-600 fs-14 text-center text-main2 d-block mt-4">نیاز به کمک دارم</a>
     </form>
   </section>
