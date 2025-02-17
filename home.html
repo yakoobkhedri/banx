@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  <title>صفحه اصلی</title>
+</head>
+
+<body class="bg-gray">
+
+ <!-- notification modal -->
+ <div class="active modal-box position-fixed w-100 h-100 overflow-auto bg-overlay z-1040 d-flex align-items-center justify-content-center">
+  <div class="bg-white max-w-350 mx-auto rounded-20 p-3 pt-0">
+    <img alt="logo" src="assets/img/info-circle.png" class="d-block mx-auto mt-4 w-32 h-32">
+    <p class="font-700 text-main text-center mt-3 mb-0">سجام</p>
+    <p class="opacity-80 text-main text-center fs-12 mt-3 mb-4">حسین عزیز شما هنوز احراز هویت سجام را انجام نداده‌اید.</p>
+    <button id="closeAuthModal" type="button" class="text-main d-block w-100 border-0 bg-main2 fs-14 font-600 h-51 rounded-10 text-center">متوجه شدم</button>
+  </div>
+</div>
+
+<section class="py-5">
+  <div class="max-w-350 mx-auto">
+    <img alt="img" src="assets/img/Group (2).png" class="d-block mx-auto">
+    <div class="bg-white rounded-10 border-second2 shadow-3 p-4 px-3 mt-3">
+      <div class="w-100" style="height: 260px;" id="container"></div>
+    </div>
+    <div class="mt-4 d-flex align-items-center justify-content-between gap-1 text-center">
+      <div class="cursor">
+        <div>
+          <div class="w-60 h-60 d-flex align-items-center justify-content-center rounded-10 bg-main6">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 1.33317V22.6665M10 22.6665L2 14.6665M10 22.6665L18 14.6665" stroke="#939D2D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-0 mt-2 fs-12 font-600">خرید</p>
+      </div>
+      <div class="cursor">
+        <div>
+          <div class="w-60 h-60 d-flex align-items-center justify-content-center rounded-10 bg-main6">
+            <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.33337 22.6668V1.3335M9.33337 1.3335L1.33337 9.3335M9.33337 1.3335L17.3334 9.3335" stroke="#939D2D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-0 mt-2 fs-12 font-600">فروش</p>
+      </div>
+      <div class="cursor">
+        <div>
+          <div class="w-60 h-60 d-flex align-items-center justify-content-center rounded-10 bg-main6">
+            <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.50003 8.4C1.50003 6.15979 1.50003 5.03969 1.936 4.18404C2.3195 3.43139 2.93142 2.81947 3.68407 2.43597C4.53972 2 5.65982 2 7.90003 2H16.4334C18.6736 2 19.7937 2 20.6493 2.43597C21.402 2.81947 22.0139 3.43139 22.3974 4.18404C22.8334 5.03969 22.8334 6.15979 22.8334 8.4V26L19.1667 23.3333L15.8334 26L12.1667 23.3333L8.50003 26L5.1667 23.3333L1.50003 26V8.4Z" stroke="#939D2D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-0 mt-2 fs-12 font-600">تراکنش‌ها</p>
+      </div>
+      <div class="cursor">
+        <div>
+          <div class="w-60 h-60 d-flex align-items-center justify-content-center rounded-10 bg-main6">
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.3333 8.33317H1.66666M1.66666 5.93317L1.66666 16.0665C1.66666 17.56 1.66666 18.3067 1.95731 18.8771C2.21297 19.3789 2.62092 19.7869 3.12268 20.0425C3.69311 20.3332 4.43985 20.3332 5.93332 20.3332L24.0667 20.3332C25.5601 20.3332 26.3069 20.3332 26.8773 20.0425C27.3791 19.7869 27.787 19.3789 28.0427 18.8771C28.3333 18.3067 28.3333 17.56 28.3333 16.0665V5.93317C28.3333 4.4397 28.3333 3.69296 28.0427 3.12253C27.787 2.62077 27.3791 2.21282 26.8773 1.95716C26.3069 1.66651 25.5601 1.66651 24.0667 1.66651L5.93332 1.6665C4.43985 1.6665 3.69311 1.6665 3.12268 1.95715C2.62092 2.21282 2.21297 2.62076 1.95731 3.12253C1.66666 3.69296 1.66666 4.4397 1.66666 5.93317Z" stroke="#939D2D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-0 mt-2 fs-12 font-600">کارت</p>
+      </div>
+    </div>
+    <div class="bg-main rounded-10 mb-74 p-4 pb-3 position-relative overflow-hidden mt-3">
+      <img alt="bg" src="assets/img/Mask group (4).png" class="position-absolute top-0 start-0 bottom-0 end-0 w-100 h-100">
+      <p class="text-white font-700 position-relative mb-3"> کارت هدیه سرمایه گذاری</p>
+      <div class="cursor h-51 fs-14 font-600 position-relative rounded-10 bg-main7 text-white d-flex align-items-center justify-content-center">فعال سازی</div>
+    </div>
+  </div>
+</section>
+
+
+<div id="navigation" class="h-84 bg-gray border-t-main shadow-1 position-fixed bottom-0 start-0 end-0">
+  <div class="d-flex align-items-center justify-content-between gap-2 max-w-350 mx-auto px-5 h-100">
+    <a>
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 25.7803H10M18 25.7803H22M21.3333 6.44694V17.1136M2 6.04694L2 17.5136C2 19.0071 2 19.7538 2.29065 20.3242C2.54631 20.826 2.95426 21.234 3.45603 21.4896C4.02646 21.7803 4.77319 21.7803 6.26667 21.7803L21.7333 21.7803C23.2268 21.7803 23.9735 21.7803 24.544 21.4896C25.0457 21.234 25.4537 20.826 25.7094 20.3242C26 19.7538 26 19.0071 26 17.5136V6.04694C26 4.55347 26 3.80673 25.7094 3.2363C25.4537 2.73454 25.0457 2.32659 24.544 2.07092C23.9735 1.78028 23.2268 1.78028 21.7333 1.78028L6.26667 1.78027C4.77319 1.78027 4.02646 1.78027 3.45603 2.07092C2.95426 2.32658 2.54631 2.73453 2.29065 3.2363C2 3.80673 2 4.55347 2 6.04694ZM13.3333 11.7803C13.3333 13.6212 11.8409 15.1136 10 15.1136C8.15905 15.1136 6.66667 13.6212 6.66667 11.7803C6.66667 9.93932 8.15905 8.44694 10 8.44694C11.8409 8.44694 13.3333 9.93932 13.3333 11.7803Z" stroke="#0D446B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a class="active">
+      <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.66667 21.4469H19.3333M12.6903 2.4656L3.64719 9.49911C3.04269 9.96927 2.74045 10.2043 2.5227 10.4987C2.32982 10.7595 2.18614 11.0533 2.0987 11.3657C2 11.7183 2 12.1012 2 12.867V22.5136C2 24.0071 2 24.7538 2.29065 25.3242C2.54631 25.826 2.95426 26.2339 3.45603 26.4896C4.02646 26.7803 4.77319 26.7803 6.26667 26.7803H21.7333C23.2268 26.7803 23.9735 26.7803 24.544 26.4896C25.0457 26.2339 25.4537 25.826 25.7094 25.3242C26 24.7538 26 24.0071 26 22.5136V12.867C26 12.1012 26 11.7183 25.9013 11.3657C25.8139 11.0533 25.6702 10.7595 25.4773 10.4987C25.2596 10.2043 24.9573 9.96927 24.3528 9.49911L15.3097 2.46561C14.8413 2.10127 14.6071 1.9191 14.3485 1.84907C14.1203 1.78729 13.8797 1.78729 13.6515 1.84907C13.3929 1.9191 13.1587 2.10127 12.6903 2.4656Z" stroke="#0D446B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-fill text-white" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" stroke="#0D446B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/counterup.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/chart.js"></script>
+</body>
+
+</html>

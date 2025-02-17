@@ -77,6 +77,9 @@ a{
 .mt-93{
     margin-top: 93px;
 }
+.mb-74{
+    margin-bottom: 74px;
+}
 input[type="number"] {
     -moz-appearance: textfield;
   }
@@ -130,6 +133,12 @@ input[type="number"] {
 }
 .bg-main5{
     background-color: #1B76A840;
+}
+.bg-main6{
+    background-color: #E1E0CF80;
+}
+.bg-main7{
+    background-color: #289ACC;
 }
 .bg-second{
     background-color: #939D2D;
@@ -343,6 +352,10 @@ input[type="number"] {
 }
 .inputBox.success{
     border: 1px solid #939D2D;
+}
+/* chart */
+.highcharts-exporting-group,.highcharts-title,.highcharts-subtitle,.highcharts-scrollbar{
+    display: none;
 }
 /* modal */
 .modal-box{
