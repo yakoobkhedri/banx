@@ -23,9 +23,9 @@
        <div class="step rounded-10 h-4 w-1-4"></div>
       </div>
       <p class="font-600 text-main mt-4 fs-14">نام کاربری دلخواه خود را وارد کنید</p>
-      <input type="text" placeholder="نام کاربری" class="mt-1 h-61 rounded-10 font-600 text-main border-main w-100 bg-white outline-none px-3 mb-5">
+      <input id="username" type="text" placeholder="نام کاربری" class="mt-1 h-61 rounded-10 font-600 text-main border-main w-100 bg-white outline-none px-3 mb-5">
       <div class="position-fixed bottom-0 end-0 start-0 m-3 max-w-350 mx-auto px-3">
-        <a class="h-51 rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-5">تایید و ادامه</a>
+        <button id="submitBtn" disabled class="h-51 w-100 border-0 button rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-5">تایید و ادامه</button>
       </div>
     </form>
 
@@ -39,6 +39,7 @@
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/counterup.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/validateUsername.js"></script>
 </body>
 
 </html>

@@ -340,7 +340,27 @@ input[type="number"] {
 .step.active{
     opacity: 100%;
 }
+/* disabled */
+.button[disabled],
+.button[disabled]:hover {
+    background-color: #0d446b50;
+    color: #98A2B3;
+    cursor: default;
+}
+
+.button,
+.button:hover {
+    background-color: #0D446B;
+    color: white;
+    transition: all .4s;
+}
 /* otp */
+.focus{
+    transition: all .4s;
+}
+.focus:focus,.focus.active{
+    border: 2px solid #939D2D;
+}
 .otpInput.error{
     border: 2px solid #D53636;
 }
