@@ -14,14 +14,14 @@
   
   <section>
   
-    <form class="mt-5 max-w-350 mx-auto px-3">
+    <form id="numberForm" class="mt-5 max-w-350 mx-auto px-3">
       <h4 class="font-700 fs-16 text-main">احراز هویت سجام</h4>
       <p class="text-main mt-4 fs-14">کد ملی خود را وارد کنید</p>
-      <input type="text" placeholder="کد ملی ده رقمی" class="mt-2 h-61 rounded-10 text-main border-main w-100 bg-white outline-none px-3 mb-5">
+      <input type="text" id="numberInput" placeholder="کد ملی ده رقمی" class="mt-2 h-61 rounded-10 text-main border-main w-100 bg-white outline-none px-3 mb-5">
       <div class="position-fixed bottom-0 end-0 start-0 m-3 max-w-350 mx-auto px-3">
         <p class="text-center fs-14 text-main opacity-60 px-3">بر اساس دستورالعمل‌های سازمان بورس، هویت کاربران بر اساس کد ملی بررسی می‌شود.</p>
         <div>
-          <a class="h-51 rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-4">فعالسازی</a>
+          <button id="submitBtn" disabled class="h-51 w-100 button border-0 rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-4">فعالسازی</button>
         </div>
       </div>
     </form>
@@ -36,6 +36,7 @@
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/counterup.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/validationMelliCode.js"></script>
 </body>
 
 </html>
