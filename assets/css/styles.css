@@ -74,6 +74,10 @@ a {
     max-width: 304px;
     width: 100%;
 }
+.max-w-310 {
+    max-width: 310px;
+    width: 100%;
+}
 .max-w-350 {
     max-width: 390px;
     width: 100%;
@@ -110,9 +114,21 @@ a {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    -moz-appearance: textfield; /* برای فایرفاکس */
+    appearance: textfield; /* برای مرورگرهای مدرن */
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* برای کروم و سافاری */
+    margin: 0; /* حذف margin پیش‌فرض */
+}
+.opacity-20 {
+    opacity: 20%;
+}
+.opacity-25 {
+    opacity: 25%;
+}
 .opacity-60 {
     opacity: 60%;
 }
@@ -495,7 +511,13 @@ input[type="number"] {
     background-color: #1B76A8;
     border-color: #1B76A8;
 }
-
+/* box */
+.box{
+    opacity: 50%;
+}
+.box.active{
+    opacity: 100%;
+}
 /* otp */
 .focus {
     transition: all .4s;
@@ -505,12 +527,14 @@ input[type="number"] {
 .focus.active {
     border: 2px solid #939D2D;
 }
-
-.otpInput.error {
+.otp-input{
+    border: 2px solid #939D2D33;
+}
+.otpInput.error,Input.error {
     border: 2px solid #D53636;
 }
 
-.otpInput.success {
+.otpInput.success,input.success {
     border: 2px solid #939D2D;
 }
 
