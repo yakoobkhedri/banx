@@ -70,9 +70,12 @@ a {
     max-width: 295px;
     width: 100%;
 }
-
+.max-w-304 {
+    max-width: 304px;
+    width: 100%;
+}
 .max-w-350 {
-    max-width: 350px;
+    max-width: 390px;
     width: 100%;
 }
 
@@ -83,7 +86,9 @@ a {
 .-top-60 {
     top: -60px;
 }
-
+.-mt-18 {
+    margin-top: -18px;
+}
 .mt-40 {
     margin-top: 40px;
 }
