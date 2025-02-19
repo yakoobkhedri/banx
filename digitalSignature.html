@@ -28,24 +28,24 @@
   
   <section>
   
-    <form class="mt-5 max-w-350 mx-auto px-3">
+    <form id="otpForm"  class="mt-5 max-w-350 mx-auto px-3">
       <h4 class="font-700 fs-16 text-main">امضای دیجیتال</h4>
       <p class="font-600 text-main mt-4 fs-14">کد تایید ارسال شده به شماره <span class="text-main2">۰۹۳۷۰۸۳۵۵۴۳</span> را وارد کنید</p>
-      <div class="d-flex align-items-center justify-content-between gap-1 mt-4 pt-2">
-       <input type="number" placeholder="-" class="rounded-10 otpInput error h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-       <input type="number" placeholder="-" class="rounded-10 otpInput success h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-       <input type="number" placeholder="-" class="rounded-10 otpInput h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-       <input type="number" placeholder="-" class="rounded-10 otpInput h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-       <input type="number" placeholder="-" class="rounded-10 otpInput h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-       <input type="number" placeholder="-" class="rounded-10 otpInput h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
-      </div>
+      <div dir="ltr" class="d-flex align-items-center justify-content-between gap-1 mt-4">
+        <input type="number" placeholder="-" id="firstOtp" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+        <input type="number" placeholder="-" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+        <input type="number" placeholder="-" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+        <input type="number" placeholder="-" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+        <input type="number" placeholder="-" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+        <input type="number" placeholder="-" class="rounded-10 focus otp-input h-68 w-100 border-second bg-white text-center text-main font-600 fs-20 outline-none">
+       </div>
       <a class="text-main2 font-600 fs-14 text-center d-block mt-3">هنوز کد را دریافت نکرده‌ام</a>
       <div class="position-fixed bottom-0 end-0 start-0 m-3 max-w-350 mx-auto px-3">
         <div class="h-57 rounded-10 bg-pink text-main fs-14 font-600 d-flex align-items-center gap-2 px-3">
           <img alt="icon" src="assets/img/svg/x-circle.svg">
           <p class="mb-0">اطلاعات وارد شده نادرست است.</p>
         </div>
-        <a data-bs-toggle="modal" data-bs-target="#AuthModal" class="h-51 rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-3">ثبت امضای دیجیتال</a>
+        <button id="submitOtp" data-bs-toggle="modal" data-bs-target="#AuthModal" class="h-51 w-100 button border-0 rounded-10 bg-main text-white fs-14 font-600 d-flex align-items-center justify-content-center mt-3">ثبت امضای دیجیتال</button>
       </div>
     </form>
 
@@ -59,6 +59,7 @@
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/counterup.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/validateOtp.js"></script>
 </body>
 
 </html>

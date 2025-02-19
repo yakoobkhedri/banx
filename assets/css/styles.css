@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "abar-semibold";
-    src: url('../fonts/Abar/Webfonts/woff/AbarHighFaNum-SemiBold.woff') format("woff");
+    src: url('../fonts/Abar/Webfonts/woff/AbarLowFaNum-SemiBold.woff') format("woff");
 }
 
 @font-face {
@@ -29,7 +29,10 @@ body {
     user-select: none;
     background: #E1E0CF;
 }
-
+#container,.highcharts-root{
+    font-family: "abar-Regular" !important;
+    font-size: 14px !important;
+}
 a {
     cursor: pointer;
     text-decoration: none;
@@ -180,7 +183,9 @@ input[type="number"] {
 .bg-main7 {
     background-color: #289ACC;
 }
-
+.bg-main8{
+    background-color: #3082af;
+}
 .bg-second {
     background-color: #939D2D;
 }
@@ -191,6 +196,9 @@ input[type="number"] {
 
 .bg-second3 {
     background-color: #6A751340;
+}
+.bg-second4{
+    background-color: #B8C14B;
 }
 
 .bg-gray {
@@ -208,7 +216,9 @@ input[type="number"] {
 .text-justify {
     text-align: justify;
 }
-
+.text-gray{
+    color: #807E75;
+}
 .text-main {
     color: #0D446B;
 }
@@ -220,7 +230,6 @@ input[type="number"] {
 .text-second {
     color: #6A7513;
 }
-
 .rounded-10 {
     border-radius: 10px;
 }
@@ -238,7 +247,9 @@ input[type="number"] {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+.rounded-25 {
+    border-radius: 25px;
+}
 .fs-10 {
     font-size: 10px;
 }
@@ -258,7 +269,15 @@ input[type="number"] {
 .fs-20 {
     font-size: 20px;
 }
-
+.fs-24 {
+    font-size: 24px;
+}
+.lh-25{
+    line-height: 25px;
+}
+.lh-40{
+    line-height: 40px;
+}
 .w-1-4 {
     width: calc(100%/4);
 }
@@ -266,7 +285,9 @@ input[type="number"] {
 .w-4 {
     width: 4px;
 }
-
+.w-12{
+    width: 12px;
+}
 .w-32 {
     width: 32px;
 }
@@ -417,11 +438,12 @@ input[type="number"] {
     font-size: 14px;
     font-weight: 600;
     color: white;
+    font-family: "abar-semibold";
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: auto;
-    top: 649px;
+    top: 660px;
     left: 0;
     width: 100%;
 }
@@ -499,10 +521,12 @@ input[type="number"] {
 .highcharts-exporting-group,
 .highcharts-title,
 .highcharts-subtitle,
-.highcharts-scrollbar {
+.highcharts-scrollbar,.highcharts-credits {
     display: none;
 }
-
+.highcharts-navigator-mask-inside{
+    fill: #0000000d;
+}
 /* modal */
 .modal-box {
     opacity: 0%;
@@ -523,7 +547,6 @@ input[type="number"] {
 .successMessage>div.success {
     opacity: 100%;
 }
-
 /* after && before */
 .lineAfter {
     position: relative;
