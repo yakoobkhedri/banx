@@ -57,12 +57,12 @@ var options = {
       format: 'dd/MM/yy HH:mm'
     },
     y: {
-        formatter: function (value) {
-            return " هزار تومان " + value.toLocaleString(); // افزودن پسوند تومان
-        }
+        formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+            return  value + ' هزار تومان';
+          }
     },
     style: {
-        fontSize: '12px', // سایز فونت
+        fontSize: '10px', // سایز فونت
         fontFamily: 'abar-Regular', // نوع فونت
         colors: '#807E75' // رنگ فونت
     }
