@@ -172,7 +172,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .border-second2 {
     border: 1px solid #B8C14B80;
 }
-
+.border-l-gray{
+    border-left: 1px solid #D9D8D6;
+}
+.border-t-gray{
+    border-top: 1px solid #F2F2F1;
+}
 .border-b-gray {
     border-bottom: 1px solid #D9D8D6;
 }
@@ -225,7 +230,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .bg-second4{
     background-color: #B8C14B;
 }
-
+.bg-second5{
+    background-color: #B8C14B33;
+}
 .bg-gray {
     background-color: #F8F8F4;
 }
@@ -554,8 +561,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .highcharts-exporting-group,
 .highcharts-title,
 .highcharts-subtitle,
-.highcharts-scrollbar,.highcharts-credits {
-    display: none;
+.highcharts-scrollbar,.highcharts-credits,.apexcharts-toolbar,.apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+    display: none !important;
 }
 .highcharts-navigator-mask-inside{
     fill: #0000000d;

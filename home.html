@@ -7,10 +7,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
-  <script src="https://code.highcharts.com/stock/highstock.js"></script>
-  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <title>صفحه اصلی</title>
 </head>
 
@@ -29,8 +26,42 @@
 <section class="py-5">
   <div class="max-w-350 mx-auto">
     <img alt="img" src="assets/img/Group (2).png" class="d-block mx-auto">
-    <div class="bg-white rounded-10 border-second2 shadow-3 p-4 px-3 mt-3">
-      <div class="w-100" style="height: 260px;" id="container"></div>
+    <div class="bg-white rounded-10 border-second2 shadow-3 mt-3">
+      <div class="d-flex align-items-start justify-content-between gap-2 p-4 pb-0">
+         <div>
+           <p class="text-main fs-12 mb-2 opacity-70">موجودی فعلی</p>
+           <p class="text-main font-700 fs-24 mb-0">۲,۳۴۴,۵۰۰ ت</p>
+         </div>
+         <div class="d-flex align-items-center justify-content-center gap-1 text-second bg-second5 py-1 px-3 rounded-pill">
+            <p class="mb-0 font-700 mt-1">32%</p>
+            <svg class="flex-shrink-0" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16667 10.9998V3.33317L1.16667 6.33317L0 5.1665L5 0.166504L10 5.1665L8.83333 6.33317L5.83333 3.33317V10.9998H4.16667Z" fill="#6A7513"/>
+            </svg>
+         </div>
+      </div>
+      <div class="w-100 fs-12 text-gray" id="mainchart"></div>
+      <div class="border-t-gray pt-3 d-flex align-items-center gap-3 mx-4 pb-4">
+        <div class="border-l-gray ps-3 flex-grow-1">
+          <div class="d-flex flex-column align-items-start gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <div class="rounded-25 w-12 h-4 bg-second4"></div>
+              <p class="mb-0 fs-12 text-main opacity-60">سود</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="rounded-25 w-12 h-4 bg-main8"></div>
+              <p class="mb-0 fs-12 text-main opacity-60">سرمایه</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-l-gray px-3 flex-grow-1">
+          <p class="mb-2 fs-12 text-main opacity-70">سرمایه شما</p>
+          <p class="text-main font-600 mb-0">۲,۰۰۰,۰۰۰ ت</p>
+        </div>
+        <div class="pe-3 flex-grow-1">
+          <p class="mb-2 fs-12 text-main opacity-70">مدت زمان</p>
+          <p class="text-main font-600 mb-0">یک ماه</p>
+        </div>
+      </div>
     </div>
     <div class="mt-4 d-flex align-items-center justify-content-between gap-1 text-center">
       <div class="cursor box">
@@ -117,7 +148,7 @@
   <script src="assets/js/counterup.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/modal.js"></script>
-  <script src="assets/js/chart.js"></script>
+  <script src="assets/js/main-chart.js"></script>
 </body>
 
 </html>

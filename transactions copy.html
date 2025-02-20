@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <title>صندوق‌ها</title>
+</head>
+
+<body class="bg-gray">
+  
+  <section>
+  
+    <div class="mt-5 max-w-350 mx-auto px-3">
+      <div>
+        <div class="d-flex align-items-center justify-content-start gap-3">
+          <a class="cursor">
+            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 14.3516L11.575 12.9516L16.175 8.35156H0V6.35156H16.175L11.6 1.75156L13 0.351562L20 7.35156L13 14.3516Z" fill="#939D2D"/>
+            </svg>
+          </a>
+          <h6 class="text-main font-600 m-0 fs-20">تراکنش‌ها</h6>
+        </div>
+        <div class="bg-white rounded-10 border-second2 shadow-3 p-3 mt-3">
+          <div class="w-100" style="height: 260px;" id="chart"></div>
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <div class="rounded-25 w-12 h-4 bg-second4"></div>
+              <p class="mb-0 fs-12 text-gray">سود</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="rounded-25 w-12 h-4 bg-main8"></div>
+              <p class="mb-0 fs-12 text-gray">سرمایه</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-4 pt-2">
+        <h6 class="font-600 text-main">لیست تراکنش‌ها</h6>
+        <div class="mt-3">
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/arrow-narrow-up.svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">خرید صندوق</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/Icon (2).svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">فروش صندوق</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/Icon (2).svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">برداشت کارمزد</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/arrow-narrow-up.svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">خرید صندوق</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/Icon (2).svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">فروش صندوق</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+          <div class="d-flex align-items-start gap-2 border-b-gray py-3 justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="w-40 h-40 d-flex align-items-center justify-content-center rounded-circle bg-main5 flex-shrink-0">
+                <img alt="icon" src="assets/img/svg/Icon (2).svg">
+              </div>
+              <div>
+                <p class="font-600 fs-14 text-main mb-2">برداشت کارمزد</p>
+                <div class="text-main opacity-80 fs-10 d-flex align-items-center gap-2">
+                 <p class="mb-0">سه‌شنبه، ۱۴ اردیبهشت ۱۴۰۲</p>
+                 <div class="w-4 h-4 rounded-circle bg-main flex-shrink-0 opacity-20"></div>
+                 <p class="mb-0">۲۲:۳۵</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0 fs-14 font-700 text-main">۴۲۰,۰۰۰,۰۰۰ ت</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/counterup.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/chart copy.js"></script>
+</body>
+
+</html>
