@@ -1,73 +1,67 @@
 var options = {
-    series: [{
-    name: 'سرمایه',
-    data: [0, 5, 15, 10, 20]
-  }, {
-    name: 'سود',
-    data: [0, 10, 5, 15, 20]
-  }],
-    chart: {
+  series: [
+    {
+      name: 'سرمایه',
+      type: 'line',
+      data: [0, 5, 15, 10, 20],
+    },
+    {
+      name: 'سود',
+      type: 'area',
+      data: [0, 10, 5, 15, 20],
+    }
+  ],
+  chart: {
     height: 250,
-    type: 'area',
+    type: 'line', // نوع چارت اصلی
   },
-  dataLabels: {
-    enabled: false
+  fill: {
+    type: 'gradient', // استفاده از رنگ ساده
+    colors: ['#B8C14B2B','#B8C14B2B'], // رنگ بدنه نمودار ناحیه‌ای (قرمز)
   },
   stroke: {
     curve: 'smooth',
     width: 2,
+    colors: ['#3082af','#b8c14b']
+  },
+  dataLabels: {
+    enabled: false
   },
   xaxis: {
-    // type: 'datetime',
-    categories: ["فروردین","اردیبهشت","خرداد","تیر","مرداد"],
+    categories: ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد"],
     labels: {
-        style: {
-            fontSize: '12px', // سایز فونت
-            fontFamily: 'abar-Regular', // نوع فونت
-            colors: '#807E75' // رنگ فونت
-        }
+      style: {
+        fontSize: '12px', // سایز فونت
+        fontFamily: 'abar-Regular', // نوع فونت
+        colors: '#807E75' // رنگ فونت
+      }
     }
   },
   yaxis: {
     labels: {
-        style: {
-            fontSize: '12px', // سایز فونت
-            fontFamily: 'abar-Regular', // نوع فونت
-            colors: '#807E75' // رنگ فونت
-        }
+      style: {
+        fontSize: '12px', // سایز فونت
+        fontFamily: 'abar-Regular', // نوع فونت
+        colors: '#807E75' // رنگ فونت
+      }
     }
-},
-  fill: {
-      colors: ['#1B76A8', '#B8C14B'],
-      type: 'gradient',
-      gradient: {
-    shade: 'dark',
-    type: "horizontal",
-    // shadeIntensity: 0.5,
-    gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
-    inverseColors: true,
-    opacityFrom: .5,
-    opacityTo: .2,
-    stops: [0,50, 100],
-    colorStops: []
-  }
   },
   tooltip: {
     x: {
       format: 'dd/MM/yy HH:mm'
     },
     y: {
-        formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
-            return  value + ' هزار تومان';
-          }
+      formatter: function (value) {
+        return value + ' هزار تومان';
+      }
     },
     style: {
-        fontSize: '10px', // سایز فونت
-        fontFamily: 'abar-Regular', // نوع فونت
-        colors: '#807E75' // رنگ فونت
+      fontSize: '10px', // سایز فونت
+      fontFamily: 'abar-Regular', // نوع فونت
+      colors: '#807E75' // رنگ فونت
     }
-  },
-  };
+  }
+};
 
-  var chart = new ApexCharts(document.querySelector("#mainchart"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#mainchart"), options);
+chart.render();
