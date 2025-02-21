@@ -566,6 +566,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .nav-tabs .nav-link {
    color: #0D446B !important;
   }
+  .nav-tabs .nav-link:focus{
+    border: none;
+  }
   .nav-tabs .nav-link.active {
     color: #fff !important;
     background-color: #0D446B !important;
