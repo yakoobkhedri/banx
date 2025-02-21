@@ -1,70 +1,137 @@
-// Create the chart
-Highcharts.stockChart('container', {
-
-    title: {
-        text: 'Cumulative Sum',
-        align: 'left'
-    },
-
-    subtitle: {
-        text: 'Displays the sum of all the previous values and the current ' +
-            'value (only within visible range)',
-        align: 'left'
-    },
-
-    plotOptions: {
-        series: {
-            allowPointSelect: true,
-            cumulative: true,
-            pointStart: '2025-01-01',
-            pointIntervalUnit: 'day'
-        }
-    },
-
-    rangeSelector: {
-        enabled: false
-    },
-
-    tooltip: {
-        pointFormat: '<span style="color:{series.color}">{series.name}</span>' +
-            ': <b>{point.y}</b>',
-        changeDecimals: 3,
-        valueDecimals: 3,
-        valuePrefix: 'تومان',
-        // valueSuffix: ' USD'
-    },
-
-    xAxis: {
-        minRange: 3 * 24 * 36e5,
-        // max: '2023-01-06'
-    },
-    yAxis: {
-        // tickInterval: 1
-    },
+var options1 = {
     series: [
-        {
-        lineWidth: 2,
-        name: 'سود',
-        color: '#B8C14B',
-        data: [
-            0, 5, 10,15, 20, 5, 10, 15,
-            5, 10, 0, 5, 10,15, 20, 5, 10, 15,
-            5, 10, 0, 5, 10,15, 20, 5, 10, 15,
-            5, 10, 0, 5, 10,15, 20, 5, 10, 15,
-            5, 10
-        ]
-    },
-     {
-        lineWidth: 2,
+      {
         name: 'سرمایه',
-        color: '#1B76A8',
-        data: [
-            10, 15, 0,5, 10, 15, 20, 5,
-            15, 20, 10, 15, 0,5, 10, 15, 20, 5,
-            15, 20,10, 15, 0,5, 10, 15, 20, 5,
-            15, 20, 10, 15, 0,5, 10, 15, 20, 5,
-            15, 20
-        ]
+        type: 'line',
+        data: [0, 5, 15, 10, 20,12,18],
+      },
+      {
+        name: 'سود',
+        type: 'area',
+        data: [0, 10, 5, 15, 7,14,19],
+      }
+    ],
+    chart: {
+      height: 250,
+      type: 'line', // نوع چارت اصلی
+    },
+    fill: {
+      type: 'solid', // استفاده از رنگ ساده
+      colors: ['#3082af','#B8C14B2B'], // رنگ بدنه نمودار ناحیه‌ای
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 2,
+      colors: ['#3082af','#b8c14b']
+    },
+    dataLabels: {
+      enabled: false
+    },
+    xaxis: {
+      categories: ["1", "5", "10", "15", "20","25", "30"],
+      labels: {
+        style: {
+          fontSize: '12px', // سایز فونت
+          fontFamily: 'abar-Regular', // نوع فونت
+          colors: '#807E75' // رنگ فونت
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          fontSize: '12px', // سایز فونت
+          fontFamily: 'abar-Regular', // نوع فونت
+          colors: '#807E75' // رنگ فونت
+        }
+      }
+    },
+    tooltip: {
+      x: {
+        format: 'dd/MM/yy HH:mm'
+      },
+      y: {
+        formatter: function (value) {
+          return value + ' هزار تومان';
+        }
+      },
+      style: {
+        fontSize: '10px', // سایز فونت
+        fontFamily: 'abar-Regular', // نوع فونت
+        colors: '#807E75' // رنگ فونت
+      }
     }
-]
-});
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart1"), options1);
+  chart.render();
+
+  // 
+
+  var options2 = {
+    series: [
+      {
+        name: 'سرمایه',
+        type: 'line',
+        data: [0, 5, 15, 10, 20,12,18],
+      },
+      {
+        name: 'سود',
+        type: 'area',
+        data: [0, 10, 5, 15, 7,14,19],
+      }
+    ],
+    chart: {
+      height: 250,
+      type: 'line', // نوع چارت اصلی
+    },
+    fill: {
+      type: 'solid', // استفاده از رنگ ساده
+      colors: ['#3082af','#B8C14B2B'], // رنگ بدنه نمودار ناحیه‌ای
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 2,
+      colors: ['#3082af','#b8c14b']
+    },
+    dataLabels: {
+      enabled: false
+    },
+    xaxis: {
+      categories: ["1", "5", "10", "15", "20","25", "30"],
+      labels: {
+        style: {
+          fontSize: '12px', // سایز فونت
+          fontFamily: 'abar-Regular', // نوع فونت
+          colors: '#807E75' // رنگ فونت
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          fontSize: '12px', // سایز فونت
+          fontFamily: 'abar-Regular', // نوع فونت
+          colors: '#807E75' // رنگ فونت
+        }
+      }
+    },
+    tooltip: {
+      x: {
+        format: 'dd/MM/yy HH:mm'
+      },
+      y: {
+        formatter: function (value) {
+          return value + ' هزار تومان';
+        }
+      },
+      style: {
+        fontSize: '10px', // سایز فونت
+        fontFamily: 'abar-Regular', // نوع فونت
+        colors: '#807E75' // رنگ فونت
+      }
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart2"), options2);
+  chart.render();

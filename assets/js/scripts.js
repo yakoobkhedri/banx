@@ -20,9 +20,7 @@ var wellcome = new Swiper(".wellcome", {
 }
 });
 
-// counter
-
-$('.counter').counterUp({
-  delay: 10,
-  time: 1400
+var swipertab = new Swiper(".swipertab", {
+  slidesPerView: 5,
+  spaceBetween: 10,
 });
