@@ -23,4 +23,5 @@ var wellcome = new Swiper(".wellcome", {
 var swipertab = new Swiper(".swipertab", {
   slidesPerView: 5,
   spaceBetween: 10,
+  loop: true
 });
