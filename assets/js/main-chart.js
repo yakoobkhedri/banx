@@ -16,8 +16,8 @@ var options = {
     type: 'line', // نوع چارت اصلی
   },
   fill: {
-    type: 'gradient', // استفاده از رنگ ساده
-    colors: ['#B8C14B2B','#B8C14B2B'], // رنگ بدنه نمودار ناحیه‌ای (قرمز)
+    type: 'solid', // استفاده از رنگ ساده
+    colors: ['#3082af','#B8C14B2B'], // رنگ بدنه نمودار ناحیه‌ای
   },
   stroke: {
     curve: 'smooth',
