@@ -8,14 +8,17 @@ var wellcome = new Swiper(".wellcome", {
     el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   on: {
     reachEnd: function () {
         document.querySelector('.swiper-button-prev').classList.add('hidden');
+        document.querySelector('.swiper-button-next').classList.add('hidden');
     },
     fromEdge: function () {
         document.querySelector('.swiper-button-prev').classList.remove('hidden');
+        document.querySelector('.swiper-button-next').classList.remove('hidden');
     }
 }
 });

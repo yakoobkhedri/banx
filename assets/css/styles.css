@@ -288,6 +288,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .rounded-25 {
     border-radius: 25px;
 }
+.bottom-22{
+    bottom: 22px;
+}
 .fs-10 {
     font-size: 10px;
 }
@@ -460,28 +463,43 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .swiper-button-prev {
     background: #939D2D;
-    width: 96%;
-    margin: auto;
-    right: 0;
+    width: 46%;
+    right: auto;
     left: 0;
     border-radius: 10px;
     height: 50px;
     bottom: auto;
-    top: 695px;
+    margin-left: 10px;
 }
-
+.swiper-button-next {
+    background: #939D2D;
+    width: 46%;
+    right: 0;
+    left: auto;
+    border-radius: 10px;
+    height: 50px;
+    bottom: auto;
+    margin-right: 10px;
+}
 .swiper-button-prev::after,
 .swiper-rtl .swiper-button-prev::after {
+    content: 'قبلی';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    font-family: "abar-semibold";
+}
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-next::after {
     content: 'بعدی';
     font-size: 14px;
     font-weight: 600;
     color: white;
     font-family: "abar-semibold";
 }
-
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: auto;
-    top: 660px;
+    top: -35px;
     left: 0;
     width: 100%;
 }
@@ -490,7 +508,7 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #0D446B;
 }
 
-.swiper-button-prev.hidden {
+.swiper-button-prev.hidden,.swiper-button-next.hidden {
     display: none;
 }
 
