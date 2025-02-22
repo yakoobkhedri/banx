@@ -336,9 +336,11 @@ input[type="number"]::-webkit-outer-spin-button {
 .w-40 {
     width: 40px;
 }
-
 .w-48 {
     width: 48px;
+}
+.w-49 {
+    width: 49%;
 }
 
 .w-60 {
@@ -508,8 +510,8 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #0D446B;
 }
 
-.swiper-button-prev.hidden,.swiper-button-next.hidden {
-    display: none;
+.swiper-button-prev.hidden,.swiper-button-next.hidden,.swiper-pagination.hidden,.account.hidden {
+    display: none !important;
 }
 
 .step {
