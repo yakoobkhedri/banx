@@ -31,22 +31,3 @@ var swipertab = new Swiper(".swipertab", {
   spaceBetween: 10,
   loop: true
 });
-
-function openFullscreen() {
-  const elem = document.documentElement; // کل صفحه
-
-  if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { // Firefox
-      elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
-      elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { // IE/Edge
-      elem.msRequestFullscreen();
-  }
-}
-
-// فراخوانی تابع برای ورود به حالت تمام‌صفحه
-openFullscreen();
-
-window.scrollTo(0, 1);
