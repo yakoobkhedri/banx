@@ -94,6 +94,9 @@ a {
 .-top-60 {
     top: -60px;
 }
+.pb-80{
+    padding-bottom: 80px;
+}
 .-mt-7 {
     margin-top: -7px;
 }
