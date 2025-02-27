@@ -359,7 +359,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .w-230 {
     width: 230px;
 }
-
+.w-350 {
+    width: 350px;
+}
 .h-4 {
     height: 4px;
 }
@@ -709,4 +711,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media only screen and (max-width:576px) {}
 
-@media only screen and (max-width:400px) {}
+@media only screen and (max-width:350px) {
+    .h-369-xs{
+        height: 369px;
+    }
+}
