@@ -86,7 +86,10 @@ a {
     max-width: 390px;
     width: 100%;
 }
-
+.max-w-406 {
+    max-width: 406px;
+    width: 100%;
+}
 .-bottom-41 {
     bottom: -41px;
 }
